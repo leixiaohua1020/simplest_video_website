@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Video-->
+<struts>
+<package name="Video" namespace="/" extends="struts-default">
+		<!-- 添加-->
+    	<action name="VideoAddPage">
+    		<result type="dispatcher">/videoedit.jsp</result>
+    	</action>
+    	<action name="VideoAdd" class="VideoAddAction">
+    		<result name="success" type="redirectAction">VideoReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<!-- 删除 -->
+    	<action name="VideoDelete" class="VideoDeleteAction">
+    		<result name="success" type="redirectAction">VideoReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<!-- 修改 -->
+    	<action name="VideoUpdateRead" class="VideoUpdateAction" method="Read">
+    		<result name="success">/videoedit.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="VideoUpdateUpdate" class="VideoUpdateAction" method="Update">
+    		<result name="success" type="redirectAction">VideoReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+		<!-- Read By ID -->
+    	<action name="VideoReadByID" class="VideoReadByIDAction">
+    		<result name="success">/videocontent.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<!-- 列表读取所有 -->
+    	<action name="VideoReadAll" class="VideoReadAllAction">
+    		<result name="success">/videolist1.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    </package>
+</struts>

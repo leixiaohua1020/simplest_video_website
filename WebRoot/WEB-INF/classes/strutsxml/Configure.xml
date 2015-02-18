@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--作者：雷霄骅  -->
+<!-- Video-->
+<struts>
+<package name="Configure" namespace="/" extends="struts-default">
+    	<!--Configure -->
+    	<action name="ConfigureUpdateRead" class="ConfigureUpdateAction" method="Read">
+    		<result name="success">/configure.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="ConfigureUpdateUpdate" class="ConfigureUpdateAction" method="Update">
+    		<result name="success" type="redirectAction">ConfigureUpdateRead</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    </package>
+</struts>

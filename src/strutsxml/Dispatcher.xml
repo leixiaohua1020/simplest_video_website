@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--作者：雷霄骅  -->
+<!-- Video-->
+<struts>
+<package name="Dispatcher" namespace="/" extends="struts-default">
+
+		<!--Index-->
+    	<action name="Index" class="IndexAction">
+    		<result name="success">/index.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<!-- About-->
+    	<action name="About">
+    		<result type="dispatcher">/about.jsp</result>
+    	</action>
+    	
+    </package>
+</struts>

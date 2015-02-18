@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--作者：雷霄骅  -->
+<!-- Video-->
+<struts>
+<package name="Page" namespace="/" extends="struts-default">
+
+    	<action name="SidebarRecent" class="VideoReadLimitedByOrderAction">
+    		<result name="success">/csidebar_recent.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="IndexRecentAdd" class="VideoReadLimitedByOrderAction">
+    		<result name="success">/index_recent.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+
+    </package>
+</struts>
