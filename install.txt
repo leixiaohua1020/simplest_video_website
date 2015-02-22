@@ -1,0 +1,30 @@
+安装步骤
+1.安装JavaEE环境：
+(1)下载安装JDK
+(2)下载安装Tomcat
+(3)下载安装MySQL
+2.FFmpeg
+(1)下载并且解压缩FFmpeg可执行程序
+(2)把FFmpeg的bin目录(其中包含ffmpeg.exe)添加至系统的"path"环境变量(重要，这样才可以在系统任意目录中使用ffmpeg命令)
+3.复制程序
+(1)修改Webroot\WEB-INF\classes\hibernate.cfg.xml中数据库的用户名和密码
+(2)拷贝WebRoot目录至Tomcat的webapps目录，重新取个名字(例如"svw")
+(3)在MySQL中创建数据库"svw"，在其中执行svw.sql，创建数据库中的表，并且添加测试数据
+4.启动Tomcat
+5.使用浏览器访问http://localhost:8080/svw
+
+How to install
+1. Install JavaEE environment:
+(1)Download and install JDK
+(2)Download and install Tomcat
+(3)Download and install MySQL
+2.FFmpeg
+(1)Download FFmpeg (executable) and unzip it.
+(2)Add the path of FFmpeg to environment variable "path". 
+(Important, so we can call ffmpeg command in any directory)
+3.Copy source code
+(1)Change database's user and password in Webroot\WEB-INF\classes\hibernate.cfg.xml 
+(2)Copy WebRoot Folder to Tomcat's webapps Folder, Rename it (For example,"svw")
+(3)Create databse "svw", and run svw.sql to create tables and insert some data
+4.Run Tomcat
+5.Visit http://localhost:8080/svw

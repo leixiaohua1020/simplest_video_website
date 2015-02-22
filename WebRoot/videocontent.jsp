@@ -103,6 +103,7 @@
         </div>
         <div class="cleaner h20"></div>
         <!-- Default: Do not use MediaInfo  -->
+        <!-- 
         <c:if test="0">
             <h3><s:property value="%{getText('video.mediainfo')}"/></h3>
               	<div id="comment_section">
@@ -134,6 +135,7 @@
                 
                 <div class="cleaner h20"></div>
          </c:if>
+          -->
     </div>
     
     <div id="sidebar">

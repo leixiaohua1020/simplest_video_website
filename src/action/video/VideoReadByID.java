@@ -19,15 +19,9 @@
  */
 package action.video;
 
-import java.sql.Timestamp;
-import java.util.Date;
-
-import javax.servlet.ServletContext;
-
-import org.apache.struts2.ServletActionContext;
 
 import service.BaseService;
-import util.MediaInfo;
+//import util.MediaInfo;
 
 import bean.Video;
 import com.opensymphony.xwork2.ActionSupport;
@@ -78,6 +72,7 @@ public class VideoReadByID extends ActionSupport {
 			video=(Video) baseService.ReadByID("Video", videoid);
 			
 			//MediaInfo-------------------
+			/*
 			ServletContext servletContext = ServletActionContext.getServletContext();
 			String realfilePath=servletContext.getRealPath("/").replace('\\', '/')+video.getUrl();
 			String realfileoriginalPath=servletContext.getRealPath("/").replace('\\', '/')+video.getOriurl();
@@ -98,6 +93,7 @@ public class VideoReadByID extends ActionSupport {
 			}else{
 		    	convert_videoinfo+="Unable to detect media info\r\n";
 		    }
+			*/
 			//System.out.println(original_videoinfo);
 			//System.out.println(convert_videoinfo);
 			

@@ -41,7 +41,7 @@ $(document).ready(function(){
     	<div class="post">
     		<c:choose>
     			<c:when test="${empty video}">
-    			<c:set value="<%=request.getParameter("islive")%>" var="islive" scope="page" />
+    			<c:set value='<%=request.getParameter("islive")%>' var="islive" scope="page" />
     				<h2><s:property value="%{getText('video.add')}"/>
     				<c:choose>
 	    			<c:when test="${islive==1}"><s:property value="%{getText('video.live')}"/></c:when>

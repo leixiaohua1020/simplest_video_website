@@ -31,54 +31,59 @@
 	
     <div id="content">
     	<h2><s:property value="%{getText('about.about')}"/></h2>
-        <p><em>The LIRE (Lucene Image REtrieval) library a simple way to create a Lucene index of image features for content based image retrieval (CBIR). The used features are taken from the MPEG-7 Standard: ScalableColor, ColorLayout and EdgeHistogram. Furthermore methods for searching the index are provided. </em></p>
-        <p> The implemented features are </p>
+    	<p>Simplest Video Website is the simplest demo about video website. it is based on JavaEE and FFmpeg.</p>
+        <p>The site use following projects:</p>
         <ul>
           <li>
-            <div> ScalableColor, ColorLayout and EdgeHistogram (<a title="http://mpeg.chiariglione.org/standards/mpeg-7/mpeg-7.htm" href="http://mpeg.chiariglione.org/standards/mpeg-7/mpeg-7.htm" rel="nofollow">MPEG-7</a>)</div>
+           jQuery
           </li>
           <li>
-            <div> CEDD and FCTH (contributed by <a title="http://savvash.blogspot.com/" href="http://savvash.blogspot.com/" rel="nofollow">Savvas Chatzichristofis</a>)</div>
+           Struts2
           </li>
           <li>
-            <div> Color histograms (HSV and RGB), Tamura &amp; Gabor, auto color correlogram, <acronym title="Joint Photographics Experts Group">JPEG</acronym> coefficient histogram (common global descriptors)</div>
+           Spring
           </li>
           <li>
-            <div> Visual words based on <a title="http://en.wikipedia.org/wiki/Scale-invariant_feature_transform" href="http://en.wikipedia.org/wiki/Scale-invariant_feature_transform" rel="nofollow">SIFT</a> and <a title="http://en.wikipedia.org/wiki/SURF" href="http://en.wikipedia.org/wiki/SURF" rel="nofollow">SURF</a></div>
+           Hibernate
+          </li>
+          <li>
+            MySQL
+          </li>
+          <li>
+            FFmpeg
+          </li>
+          <li>
+            MediaInfo
           </li>
         </ul>
-        <p>Furthermore methods for searching the index based on <a title="http://lucene.apache.org" href="http://lucene.apache.org" rel="nofollow">Lucene</a> are provided.</p>
-        <p>The LIRE library started out as part of the Caliph &amp; Emir project and aimed to provide the CBIR features of Caliph &amp; Emir to other Java projects in an easy and light weight way. In the meantime it has turned out as big and interesting projekt itself.</p>
-        <p>With Lire you can easily <a title="lire:createindex" href="/wiki/doku.php?id=lire:createindex"> create an index</a> and <a title="lire:searchindex" href="/wiki/doku.php?id=lire:searchindex">search through the index</a>.</p>
+        <p>The structure of site is shown in the following Picture:</p>
+        <img src="images/structure.jpg" alt="User 01" style="margin:20px;"/>
+        <p>From this website the beginner can learn technics about JavaEE and FFmpeg.</p>
 <div class="cleaner h30"></div>
+<h2><s:property value="%{getText('about.aboutme')}"/></h2>
         <div class="about_box">
-            <img src="images/user.jpg" alt="User 01" />
-            <h4>雷霄骅</h4>
-            <p class="position">中国传媒大学/数字电视技术</p>
-            <p></p>
+        	<a href="http://blog.csdn.net/leixiaohua1020">
+            <img src="images/author.jpg" alt="User 01" style="margin:20px;"/>
+          	</a>
+            <h4>雷霄骅  Lei Xiaohua</h4>
+            <p><br/>
+				<a href="mailto:leixiaohua1020@126.com">leixiaohua1020@126.com</a><br/>
+            	中国传媒大学/数字电视技术<br/>
+ 				Communication University of China / Digital TV Technology<br/>
+            	<a href="http://blog.csdn.net/leixiaohua1020">http://blog.csdn.net/leixiaohua1020</a></p>
             <div class="cleaner"></div>
+            <p>我是中国传媒大学的一个博士生，一直从事与广播电视有关的视音频技术的研究。希望通过分享这个简单的示例网站帮助新手学习视频技术。</p>
+            <p>I'm a PHD student in Communication University of China. I have focused on video/audio technics for several years.
+            I shared this simple demo site to help beginnner to learn Video technics.</p>
         </div>
         <div class="about_box">
-			<img src="images/teclogo/ffmpeg-logo.png" alt="User 01" />
-			<img src="images/teclogo/lucene_logo.png" alt="User 01" />
-			<img src="images/teclogo/spring-logo.png" alt="User 01" />
-			<img src="images/teclogo/struts-logo.gif" alt="User 01" />
-			<img src="images/teclogo/hibernate-logo.png" alt="User 01" />
+			
             <div class="cleaner"></div>
         </div>
     </div>
     
     <div id="sidebar">
 
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>Nunc vitae purus non augue scelerisque ultricies vitae et velit quis nulla id orci malesua tempus erat.</p>
-            <cite>Steven <a href="#"><span>- Web Designer</span></a></cite>
-		</div>
-    	<div class="testimonial">
-            <p>Curabitur sed felis urna, quis eleifend magna. Nunc quam mollis sem nunc mauris iaculis sed.</p>
-    		<cite>Thomas <a href="#"><span>- Senior Webmaster</span></a></cite>
-		</div>
 		<s:action name="SidebarRecent" executeResult="true">
            	<s:param name="num">5</s:param>
         </s:action>
