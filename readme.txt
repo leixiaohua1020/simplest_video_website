@@ -1,16 +1,18 @@
-×î¼òµ¥µÄÊÓÆµÍøÕ¾
+æœ€ç®€å•çš„è§†é¢‘ç½‘ç«™
 Simplest Video Website
 
-À×Ïöæè Lei Xiaohua
+Watch any video on this website for free and without buffering!
+
+é›·éœ„éª… Lei Xiaohua
 
 leixiaohua1020@126.com
-ÖĞ¹ú´«Ã½´óÑ§/Êı×ÖµçÊÓ¼¼Êõ
+ä¸­å›½ä¼ åª’å¤§å­¦/æ•°å­—ç”µè§†æŠ€æœ¯
 Communication University of China / Digital TV Technology
 http://blog.csdn.net/leixiaohua1020
 
-±¾³ÌĞòÊÇÒ»¸ö×î¼òµ¥µÄÊÓÆµÍøÕ¾ÊÓÆµ¡£ËüÖ§³Ö
-1.Ö±²¥
-2.µã²¥
+æœ¬ç¨‹åºæ˜¯ä¸€ä¸ªæœ€ç®€å•çš„è§†é¢‘ç½‘ç«™è§†é¢‘ã€‚å®ƒæ”¯æŒ
+1.ç›´æ’­
+2.ç‚¹æ’­
 This software is the simplest video website.
 It support: 
 1. live broadcast 
